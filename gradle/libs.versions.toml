@@ -35,8 +35,8 @@ simple-tools-commons = { module = "com.github.SimpleMobileTools:Simple-Commons",
 androidpdfviewer = { module = "com.github.tibbi:AndroidPdfViewer", version.ref = "androidpdfviewer" }
 autofittextview = { module = "me.grantland:autofittextview", version.ref = "autofittextview" }
 gestureviews = { module = "com.alexvasilkov:gesture-views", version.ref = "gestureviews" }
-rootshell = { module = "com.github.Stericson:RootShell", version.ref = "rootshell" }
-roottools = { module = "com.github.Stericson:RootTools", version.ref = "roottools" }
+rootshell = { module = "com.github.naveensingh:RootShell", version.ref = "rootshell" }
+roottools = { module = "com.github.naveensingh:RootTools", version.ref = "roottools" }
 zip4j = { module = "net.lingala.zip4j:zip4j", version.ref = "zip4j" }
 [plugins]
 android = { id = "com.android.application", version.ref = "gradlePlugins-agp" }
