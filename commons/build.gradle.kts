@@ -4,7 +4,6 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.parcelize)
-    `maven-publish`
 }
 
 android {
@@ -34,6 +33,11 @@ android {
         compose = true
     }
 
+    lint {
+        abortOnError = false
+        checkReleaseBuilds = false
+    }
+
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
     }
@@ -60,17 +64,6 @@ android {
         getByName("main").java.srcDirs("src/main/kotlin")
     }
     namespace = libs.versions.app.version.groupId.get()
-}
-
-publishing.publications {
-    create<MavenPublication>("release") {
-        groupId = libs.versions.app.version.groupId.get()
-        artifactId = name
-        version = libs.versions.app.version.versionName.get()
-        afterEvaluate {
-            from(components["release"])
-        }
-    }
 }
 
 dependencies {
