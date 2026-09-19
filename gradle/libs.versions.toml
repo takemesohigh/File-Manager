@@ -22,7 +22,7 @@ material = "1.10.0"
 patternLockView = "a90b0d4bf0"
 reprint = "2cb206415d"
 recyclerviewFastscroller = "5a95285b1f"
-rtlViewpager = "940f12724ff0fe624f12e8218b2b967891aa5396"
+rtlViewpager = "940f12724f"
 #Compose
 composeActivity = "1.8.0"
 compose = "1.6.0-alpha07"
