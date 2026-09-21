@@ -34,7 +34,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-            - name: Run clean build with no build cache
+      - name: Run clean build with no build cache
         run: ./gradlew clean assembleDebug --no-build-cache --stacktrace ${{ github.event.inputs['gradle-args'] }}
         env:
           JAVA_HOME: ${{ steps.setup-java.outputs.java-home || env.JAVA_HOME }}
