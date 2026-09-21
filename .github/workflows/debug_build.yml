@@ -22,7 +22,7 @@ jobs:
           java-version: '17'
 
       - name: Set up Gradle cache
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: |
             ~/.gradle/caches
